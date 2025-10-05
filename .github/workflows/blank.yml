@@ -1,0 +1,15 @@
+name: workflow to run linux commands
+on: workflow_dispatch #on what event we have to run the workflow
+jobs:
+   job1:   #give name to the job
+     runs-on: ubuntu-latest   #run the jon where?
+     steps:
+       - name: execute linux commands
+         run: echo "Hello All"
+   job2:
+     runs-on: ubuntu-24.04
+     steps:
+     - name: Execute set of linux commands
+       run:
+         hostname -s
+         echo "thank you all!!"
