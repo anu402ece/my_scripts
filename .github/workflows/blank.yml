@@ -10,6 +10,6 @@ jobs:
      runs-on: ubuntu-24.04
      steps:
      - name: Execute set of linux commands
-       run:
+       run: |
          hostname -s
          echo "thank you all!!"
